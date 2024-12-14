@@ -3,9 +3,9 @@ import { SiLaravelnova } from "react-icons/si";
 
 const Logo = () => {
   return (
-    <div className="flex items-center gap-2">
+    <div className="flex items-center gap-2 font-semibold">
       <SiLaravelnova />
-      Nova
+      <h1>Nova</h1>
     </div>
   );
 };
