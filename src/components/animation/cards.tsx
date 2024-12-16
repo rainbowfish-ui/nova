@@ -1,27 +1,23 @@
 "use client";
-import React, { useEffect } from "react";
-import CardPopup from "./card-popup";
-import { motion, useAnimate } from "motion/react";
+import React from "react";
+import { motion } from "motion/react";
+import Card from "../landing-page/hero/card";
 
 const Cards = () => {
-  const [scope, animate] = useAnimate();
-
-  const animationFrame = async () => {
-    await animate("#card-popup", { y: 200, rotate: -20 });
-    await animate("#card-popup", { y: 0, rotate: -4 }, { duration: 0.5 });
-    await animate("#card-popup", { opacity: 0 }, { duration: 0 });
-  };
-
-  useEffect(() => {
-    animationFrame();
-  }, []);
   return (
-    <div
-      className="size-full relative flex items-start justify-center"
-      ref={scope}
-    >
-      <CardPopup />
-      <motion.div></motion.div>
+    <div className="size-full relative flex items-start justify-center bg-red-500">
+      <motion.div
+        initial={{ opacity: 0 }}
+        id="cards-container"
+        className="flex size-full relative bg-red-50 justify-center"
+      >
+        <Card className="absolute rotate-[-4deg]" id="card6" name="card6" />
+        <Card className="absolute rotate-[-4deg]" id="card5" name="card5" />
+        <Card className="absolute rotate-[-4deg]" id="card4" name="card4" />
+        <Card className="absolute rotate-[-4deg]" id="card3" name="card3" />
+        <Card className="absolute rotate-[-4deg]" id="card2" name="card2" />
+        <Card className="absolute rotate-[-4deg]" id="card1" name="card1" />
+      </motion.div>
     </div>
   );
 };
