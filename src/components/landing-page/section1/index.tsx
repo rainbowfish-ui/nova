@@ -25,16 +25,16 @@ const Section1 = () => {
           </div>
           <div className="w-[50%] h-full rounded-md flex items-start justify-start">
             <p className="w-[60%] text-2xl drop-shadow-lg">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet,
-              pariatur!
+              Minimalism is not about having less. It's about making room for
+              more of what matters.
             </p>
           </div>
         </div>
         <div className="w-full h-72 flex items-center justify-center gap-6 rotate-3  -translate-x-16 -translate-y-10">
           <div className="w-[50%] h-full rounded-md flex items-end justify-end ">
             <p className="w-[60%] text-2xl drop-shadow-lg">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet,
-              pariatur!
+              The ability to simplify means to eliminate the unnecessary so that
+              the necessary may speak.
             </p>
           </div>
           <div className="bg-gray-100 w-96 h-full rounded-lg shadow-xl border p-1">

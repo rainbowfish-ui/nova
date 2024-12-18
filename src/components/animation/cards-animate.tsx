@@ -51,12 +51,13 @@ const CardsAnimate = () => {
       { y: 80, x: -((screenWidth / 2) * 70) / 100, rotate: -20 },
       { duration: 0.5 }
     );
-    animate("#get-started-button", { y: 250, opacity: 1 }, { duration: 0.5 });
-    animate(
+    animate("#get-started-button", { y: 280, opacity: 1 }, { duration: 0.5 });
+    await animate(
       "#explore-button",
-      { y: 250, opacity: 1 },
+      { y: 280, opacity: 1 },
       { duration: 0.5, delay: 0.3 }
     );
+    await animate("#subtitle", { y: 200, opacity: 1 }, { duration: 0.5 });
   };
 
   useEffect(() => {
