@@ -2,7 +2,7 @@
 import React from "react";
 import { motion } from "motion/react";
 import Card from "../landing-page/hero/card";
-import { BsArrowRight } from "react-icons/bs";
+import HeroButtons from "./hero-buttons";
 
 const cards = [
   { name: "card1", imageUrl: "/web1.webp" },
@@ -32,26 +32,7 @@ const Cards = () => {
             />
           );
         })}
-
-        <motion.button
-          className="bg-[#2c2c2c] text-white z-10 px-10 py-1.5 rounded-full"
-          type="button"
-          id="get-started-button"
-          initial={{ opacity: 0, y: 200 }}
-        >
-          Get Started
-        </motion.button>
-        <motion.button
-          className="bg-[#f6f6f6] z-10 pl-10 pr-5 py-1.5 rounded-full ml-4 flex items-center justify-center gap-4"
-          type="button"
-          id="explore-button"
-          initial={{ opacity: 0, y: 200 }}
-        >
-          Explore
-          <span className="p-1.5 rounded-full bg-[#2c2c2c] text-white">
-            <BsArrowRight />
-          </span>
-        </motion.button>
+        <HeroButtons />
       </motion.div>
     </div>
   );
